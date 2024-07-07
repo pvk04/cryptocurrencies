@@ -1,4 +1,4 @@
-function Testimonial({ imgSrc, name, handle, text }) {
+function Testimonial({ imgSrc, name, username, text }) {
 	return (
 		<div className="testimonial">
 			<div className="testimonial-user">
@@ -7,7 +7,7 @@ function Testimonial({ imgSrc, name, handle, text }) {
 				</div>
 				<div className="testimonial-user-info">
 					<span className="testimonial-user-name">{name}</span>
-					<span className="testimonial-user-tag">{handle}</span>
+					<span className="testimonial-user-tag">{username}</span>
 				</div>
 			</div>
 			<p>{text}</p>

@@ -42,8 +42,9 @@ body {
 	font-weight: 400;
 }
 
-p {
+h1, p {
 	margin: 0;
+	padding: 0;
 }
 
 .container {

@@ -14,25 +14,25 @@ const testimonialsData = [
   {
     imgSrc: testimonialLorenzoIcon,
     name: "LORENZO",
-    handle: "@lorenzo",
+    username: "@lorenzo",
     text: "Amazing Telegram bot! Provides real-time crypto prices and news."
   },
   {
     imgSrc: testimonialAdalinaIcon,
     name: "ADALINA",
-    handle: "@ada",
+    username: "@ada",
     text: "Must-have bot for crypto traders. Accurate signals and analysis."
   },
   {
     imgSrc: testimonialAlexanderIcon,
     name: "ALEXANDER",
-    handle: "@alex_x",
+    username: "@alex_x",
     text: "Superb cryptocurrency bot! Quick updates and reliable data."
   },
   {
     imgSrc: testimonialRushanaIcon,
     name: "RUSHANA",
-    handle: "@hana",
+    username: "@hana",
     text: "Efficient and user-friendly bot. Simplifies crypto trading tasks."
   },
 ];
@@ -52,30 +52,33 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="headline">DO YOU WANT TO LEARN MORE ABOUT CRYPTOCURRENCIES <span className="headline-gradient">QUICKLY AND EASILY ?</span></div>
-        <div className="subheadline">Subscribe to our channel to learn more</div>
+        <header>
+          <h1 className="headline">DO YOU WANT TO LEARN MORE ABOUT CRYPTOCURRENCIES <span className="headline-gradient">QUICKLY AND EASILY ?</span></h1>
+          <p className="subheadline">Subscribe to our channel to learn more</p>
+        </header>
 
-        <div className="stats">
-          {statData.map(({ text, label }, index) => (
-            <Stat text={text} label={label} key={index} />
-          ))}
-        </div>
+        <main>
+          <section className="stats">
+            {statData.map(({ text, label }, index) => (
+              <Stat text={text} label={label} key={index} />
+            ))}
+          </section>
 
-        <button className="cta-button">JOIN WHATSAPP</button>
+          <button className="cta-button">JOIN WHATSAPP</button>
+          <aside className="testimonials">
+            {testimonialsData.map(({ imgSrc, name, username, text }, index) => (
+              <Testimonial imgSrc={imgSrc} name={name} username={username} text={text} key={index} />
+            ))}
+          </aside>
+        </main>
 
-        <div className="app-links">
+        <footer className="app-links">
           {appLinksData.map(({ imgSrc, name, label }, index) => (
             <AppLink imgSrc={imgSrc} name={name} label={label} key={index} />
           ))}
-        </div>
-
-        <div className="testimonials">
-          {testimonialsData.map(({ imgSrc, name, handle, text }, index) => (
-            <Testimonial imgSrc={imgSrc} name={name} handle={handle} text={text} key={index} />
-          ))}
-        </div>
+        </footer>
       </div>
-    </div>
+    </div >
   );
 }
 
