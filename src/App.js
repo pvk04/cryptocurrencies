@@ -1,6 +1,7 @@
 import './App.css';
 import AppLink from "./components/AppLink/AppLink";
-import Testimonial from "./components/Testimonial/Testimonial"
+import Testimonial from "./components/Testimonial/Testimonial";
+import Stat from "./components/Stat/Stat";
 
 import googlePlayIcon from "./assets/google-play.svg";
 import appStoreIcon from "./assets/app-store.svg";
@@ -39,7 +40,13 @@ const testimonialsData = [
 const appLinksData = [
   { imgSrc: googlePlayIcon, name: "Google play", label: "get it on" },
   { imgSrc: appStoreIcon, name: "App Store", label: "Available on the" },
-]
+];
+
+const statData = [
+  { text: "20K+", label: "subscribers" },
+  { text: "19,5K", label: "successful cases" },
+  { text: "4.8/5", label: "rating" },
+];
 
 function App() {
   return (
@@ -49,18 +56,9 @@ function App() {
         <div className="subheadline">Subscribe to our channel to learn more</div>
 
         <div className="stats">
-          <div className="stat">
-            <div className="stat-number">20K+</div>
-            <div className="stat-label">subscribers</div>
-          </div>
-          <div className="stat">
-            <div className="stat-number">19,5K</div>
-            <div className="stat-label">successful cases</div>
-          </div>
-          <div className="stat">
-            <div className="stat-number">4.8/5</div>
-            <div className="stat-label">rating</div>
-          </div>
+          {statData.map(({ text, label }, index) => (
+            <Stat text={text} label={label} key={index} />
+          ))}
         </div>
 
         <button className="cta-button">JOIN WHATSAPP</button>
