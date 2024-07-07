@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cryptocurrencies/static/css/main.23626d1a.css",
+    "main.js": "/cryptocurrencies/static/js/main.e2c3245b.js",
+    "static/js/453.d61e6aed.chunk.js": "/cryptocurrencies/static/js/453.d61e6aed.chunk.js",
+    "static/media/testimonial-rushana.png": "/cryptocurrencies/static/media/testimonial-rushana.974c55292bff66f80637.png",
+    "static/media/testimonial-adalina.png": "/cryptocurrencies/static/media/testimonial-adalina.49f8e387e9834f2b55db.png",
+    "static/media/testimonial-lorenzo.png": "/cryptocurrencies/static/media/testimonial-lorenzo.ddcd77ad1ade43c43228.png",
+    "static/media/testimonial-alexander.png": "/cryptocurrencies/static/media/testimonial-alexander.68b04a9d1e21940c1476.png",
+    "static/media/ethereum-bg.svg": "/cryptocurrencies/static/media/ethereum-bg.c066b4c9284fab32877b.svg",
+    "static/media/bitcoin-bg.svg": "/cryptocurrencies/static/media/bitcoin-bg.056c3a82ae2fd932f6b9.svg",
+    "static/media/litecoin-bg.svg": "/cryptocurrencies/static/media/litecoin-bg.8298c092195e9bad2e86.svg",
+    "static/media/app-store.svg": "/cryptocurrencies/static/media/app-store.9a51cdf4bafcbdc47a2e09bb805cd3a0.svg",
+    "static/media/google-play.svg": "/cryptocurrencies/static/media/google-play.e1005cc523c6fb776fd4c86b2a1ac7df.svg",
+    "index.html": "/cryptocurrencies/index.html",
+    "main.23626d1a.css.map": "/cryptocurrencies/static/css/main.23626d1a.css.map",
+    "main.e2c3245b.js.map": "/cryptocurrencies/static/js/main.e2c3245b.js.map",
+    "453.d61e6aed.chunk.js.map": "/cryptocurrencies/static/js/453.d61e6aed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23626d1a.css",
+    "static/js/main.e2c3245b.js"
+  ]
+}
